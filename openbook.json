@@ -29,7 +29,7 @@
     },
     "google_adsence": {
         "enabled": false, 
-        "contents_ad": "data/contents_ad.js",
+        "contents_ad": "",
         "chapter_upper_ad": "",
         "chapter_bottom_ad": "data/bottom_ad.js"
     },

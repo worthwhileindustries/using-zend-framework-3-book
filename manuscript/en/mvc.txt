@@ -576,8 +576,8 @@ return [
 ];
 ~~~
 
-I> If you have some experiense with Zend Framework 2, you may notice that the things are now a little different than before. 
-I> In ZF2, there was `getServiceLocator()` method in the `AbstactActionController` base class allowing to get dependencies of the controller even without the factory. 
+I> If you have some experience with Zend Framework 2, you may notice that the things are now a little different than before. 
+I> In ZF2, there was `getServiceLocator()` method in the `AbstractActionController` base class allowing to get dependencies of the controller even without the factory. 
 I> In ZF3, you have to pass dependencies explicitly. It is a little more boring, 
 I> but it removes "hidden" dependencies and makes your code more clear and easier to understand.
 
@@ -902,7 +902,7 @@ presented with a brief description:
 | `Doctype`                                | Helper for setting and retrieving the doctype HTML element |
 |                                          | of the web page.                                     |
 |------------------------------------------|------------------------------------------------------|
-| `PageTitle`                              | Helper for setting the title HTML element            |
+| `HeadTitle`                              | Helper for setting the title HTML element            |
 |                                          | of the web page.                                     |
 |------------------------------------------|------------------------------------------------------|
 | `HtmlList`                               | Helper for generating ordered and unordered HTML lists. |
@@ -1029,7 +1029,7 @@ The template name is usually composed of module name followed by controller name
   *APP_DIR/module/Application/view/application/index/about.phtml*.
   This way is simpler, because you don't have to maintain any maps. 
   
-View resolver settings are stored inside of your *module.php.config* file under the *view_manager* key:
+View resolver settings are stored inside of your *module.config.php* file under the *view_manager* key:
 
 {line-numbers=on,lang=php}
 ~~~
